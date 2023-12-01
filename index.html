@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website   </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    width:100%;
+    height: 100vh;
+    background-image: url(./img/main\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+span{
+    color: #ff0303;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #ff0303;
+}
+.btn{
+    background-color: #ff0303;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h4{
+    color: #d13131;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+h5{
+    color: white;
+    font-size: 20px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: 500px;
+    width: 410px;
+    padding-right: 50px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.about-text p{
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+
+}
+.card{
+    height: 300px;
+    width: 365px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin:15px ;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin:25px 0px;
+    color:#f9004d;
+}
+.card h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.para p{
+    color: #fcfc;
+    font-size:16px ;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+    </style>
+</head>
+<body>
+ <div class="hero">
+    <nav>
+        <h2 class="logo">Portfolio</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About me</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            
+        <a href="./img/resume.jpg" download="resume.jpg"  class="btn">Resume</a>
+    </nav>
+    <div class="content">
+        <h4>Hello, Everyone</h4>
+        <h1>I'm Suriya,</h1>
+        <h3>Web <span>Developer</h3>
+        <h5 style="padding-right:44%">A passionate FullStrack web developer 🌐 having an experience of building Web and
+             mobile application with Javascript ,React.js ,Node.js ,React Native and some other cool libraries and frameworks.
+            Motivated and result-oriented professional with strong background in FullStrack Web Development Field.</h5>
+    </div>
+ </div>
+    <section class="about" id="About">
+    <div class="main">
+    <img src="img/person1.jpg" alt="person">
+    <div class="about-text">
+        <h2>About Me</h2>
+        <h5>Web Developer <span>& UI/UX Designer</span></h5>
+        <p>I am currently pursuing my bachelor degree in technology,specifically in Information Technology(IT) at Chennai Institute of technology (CIT)near Chennai.I am front-end developer and learning backend web Development
+            also.I can design the UI/UX for website.I also make thewebsite more interactive with web animations.A responsive design makes your
+            websites accessible to all users,regardless of their device size .
+        </p>
+    </div>
+    </div>
+    </div></section>
+    <section>
+        <div class="service" id="Skills">
+            <div class="title">
+                <h2>Skills</h2>
+            </div>
+       
+
+      <div class="box">
+        <div class="card">
+            <h5>HTML & CSS</h5>
+            <div class="para">
+                <p > HTML and CSS are scripting languages used to create a web page and web applications. HTML provides web page structure, whereas CSS is mainly used to control web page styling.</p>
+                    
+            </div>
+        </div>
+
+        <div class="card">
+            <h5>Javascript</h5>
+            <div class="para">
+                <p >JavaScript is a scripting or programming language that allows you to implement complex features on web pages instead of every time a web page does more than just sit there and display static information.</p>
+                    
+            </div>
+        </div>
+
+        <div class="card">
+            <h5>Python</h5>
+            <div class="para">
+                <p >Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers.</p>
+                    
+            </div>
+        </div>
+
+        <div class="card">
+            <h5>Java</h5>
+            <div class="para">
+                <p >Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps.</p>                 
+            </div>
+        </div>
+        <div class="card">
+            <h5>C programming</h5>
+            <div class="para">
+                <p >C is a general-purpose computer programming language for system administration, network programming, and embedded software. It has several features that make it desirable for these applications.</p>
+                    
+            </div>
+        </div>
+      </div>
+       </div>
+    </section>
+
+
+    <section>
+        <div class="service" id="Projects">
+            <div class="title">
+                <h2>Projects</h2>
+            </div>
+       
+
+      <div class="box">
+        <div class="card">
+            <i class="fa-solid fa-star"></i>
+            <h5>Hotstar clone</h5>
+            <div class="para">
+                <p > A simple website having similar to the OTT (On The Top) platform such as Hotstar using HTML,CSS and JavaScript.The clone website has responsive to all the devices.</p>
+                    
+            </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-n"></i>
+                <h5>Netflix clone</h5>
+                <div class="para">
+                    <p> A simple website having similar homepage of the OTT (On The Top) platform such as Netflix using HTML,CSS and JavaScript.The clone website has responsive to all the devices.</p>
+       
+                </div>
+                </div>
+                
+                <div class="card">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h5>Weather website</h5>
+                    <div class="para">
+                        <p > A website using HTML,CSS and JavaScript that fetches weather data from an API and displays the current weather condition of every city in the world.</p>
+                            
+                    </div>
+                    </div>    
+            </div>
+        </div>
+        </section>
+    <footer id="Contact">
+        <p>Suriya </p>
+        <p>For more information,</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        
+    </footer>
+</body>
+</html>
